@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********  Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+  <title>How To Communicate with ChatGPT | Hexo</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Hexo">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a target="_blank" rel="noopener" href="http://go.kieran.top/" class="animsition-link">Kieran</a></li>
+                    
+                    <li><a target="_blank" rel="noopener" href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Hexo</a></li>
+                            <li class="nolink">See Also</li>
+                            
+                            <li><a href="https://github.com/JeanJean-rxl" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://instagram.com/__yeyous/" title="Instagram" target="_blank"><i class="icon-instagram"></i></a></li>
+                            
+                            
+                            
+                            
+                            <li class="nolink"><span>;)</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2024-01-14T17:20:03.000Z" itemprop="datePublished">
+          2024-01-14
+      </time>
+    
+</span>
+                <h1>How To Communicate with ChatGPT</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h2 id="INTRODUCTION"><a href="#INTRODUCTION" class="headerlink" title="INTRODUCTION"></a>INTRODUCTION</h2><p>The past twenty years have seen increasingly rapid advances in the field of deep learning since its first proposition in the 1980s. Drawing on the development in theories of neural network and the breakthrough in computing power, plus data volume, artificial intelligence (AI) has been successfully implemented into various kinds of scenarios, such as computer vision, speech enhancement, and natural language processing (NLP). ChatGPT, a large language model (LLM) developed by OpenAI, has triggered a universal public discussion since its launch on 30th November, 2022 due to its relevance to daily life, as well as the potential to change it.<br>Despite the numerous applications of chatbot, this essay will focus on the issue of leveraging ChatGPT’s potential. By regarding the whole process as a conversation, the approach taken in this essay is to divide the aforementioned issue into two participants and one intermediary: ChatGPT, human, and language. Firstly, ChatGPT’s comprehensive ability will be examined quantitively and compared with its human counterpart. Qualitatively, whether or not it has the substantial understanding, namely, the personhood, will also be discussed. Secondly, linguistic-based constraints will be taken into consideration, as human participation also plays a crucial role; prompt engineering will explore the possibilities of overcoming these limitations. Finally, as a medium, languages’ limitation will be discussed since LLMs preceding ChatGPT-4 were typically trained on a textual corpus (OpenAI, n.d.).<br>In the aggregate, the effective communication hinges on the understanding of LLMs, our self-awareness, and mastery of media. It is imperative to underscore that the “ChatGPT” mentioned in this essay usually refers to ChatGPT-3.5 unless otherwise specified.</p>
+<h2 id="CHATGPT"><a href="#CHATGPT" class="headerlink" title="CHATGPT"></a>CHATGPT</h2><p>The advent of ChatGPT has revolutionized the conventional approach of obtaining information from the internet by replacing the traditional method of key word search based on browser, and switching to a way that is more similar to natural language. Seeing the process of enquiring answers from ChatGPT as the communication between humans and machine, deepening the understanding of this machine will benefit our consultation. ChatGPT is a text generator based on unsupervised learning and large corpus. As other deep learning models, it functions as a black box. Sometimes users will be confused with its seemingly right output because both upper and lower limit are uncertain: on the one hand, users do not know what it could do; on the other hand, they do not know when it could fail. This chapter will take a quantitative way to introduce its characteristics, abilities and limits; and then discuss whether it bears the true understanding qualitatively.</p>
+<h3 id="Quantitate-Survey"><a href="#Quantitate-Survey" class="headerlink" title="Quantitate Survey"></a>Quantitate Survey</h3><p>Setting aside the debate about whether ChatGPT possesses genuine understanding, its competence could be quantified with clinical comprehensive tasks. Overall, ChatGPT demonstrates a human-like performance in most occasions, while varies in pattern of accuracy, and fails in some cases (Pietro et al., 2023). To some extent, these data certify the intelligence of ChatGPT, but the author cautiously interpreted it as evidence of its ability to capture the pragmatic competence coded in the regularities of language use, rather than pragmatic competence, or the ability to infer. Conversely, it reflects the defect of the measurement; the discrepancy between measurements implies that some features are more intrinsic than others. The deficiency in those features explains the pragmatic weaknesses in certain scenarios, such as processing physical metaphors and understanding jokes. </p>
+<h3 id="Qualitative-Survey"><a href="#Qualitative-Survey" class="headerlink" title="Qualitative Survey"></a>Qualitative Survey</h3><p>Although the capacity of ChatGPT has been proved by a large number of surveys, if this capacity stands for the true understanding remains controversial. “Contents False-Belief” is a ToM (theory of mind) task in determining the true understanding, which is widely use in human studies, and demonstrates capacity in distinguishing human from the most intellectually and socially adept animals, such as the great apes (Kosinski, 2023). Given the fact that the accuracy developed during the iteration of LLM, among which ChatGPT-3 could be comparable with children aged 7-9, the author proposed two hypotheses: the first one is that with its gargantuan calculating ability, ChatGPT could have found some regularities in languages, which are unknown to humans for now; the second hypothesis is that ToM-like ability, which is the basis of other high-level human abilities, develops itself with the improvement of models’ complexity.<br>Browning (2023) stresses the social norm in developing minds. The author contends that the existing LLMs cannot be deemed as people, whether Cartesian-like (regarding human’s existence as thinking beings) or social-like, considering the way they are trained. The text-based training method restricts the abilities of LLMs, since it is a “very indirect” strategy for learning social norms. Therefore, autonomy is less likely to emerge due to the irrelevance of tasks. According to him, one should be a social person before it has a Cartesian account of personhood, because the former requires both the understanding and the willing to be understood.<br>In contrast, Arcas (2022) maintains that “statistics do amount to understanding, in any falsifiable sense” since it is a pseudo-proposition to define a true understanding. More inspiringly, the author defends that information is the essence, while biological or digital neural nets are merely materials by giving the example of Helen Keller, who is blind and deaf, but she can “see” and “hear” in her own way. Unlike Browning, Arcas possesses an optimistic attitude toward the understanding ability of ChatGPT by insisting that “longer arcs” will emerge with the accumulation of conversation turns.</p>
+<h2 id="HUMAN"><a href="#HUMAN" class="headerlink" title="HUMAN"></a>HUMAN</h2><p>By citing the Meno’s slave boy using mathematical reasoning, Socrates believes that knowledge is not acquired from external sources, but exists within the depth of one’s inner self as a form of memory; and the process of learning is not to acquire for novel knowledge, but to recall the forgotten ones (Devereux, 1978). The dialogues with ChatGPT impress humans similarly: the output of ChatGPT varies in accordance with its input. Like a variation around the theme, even being asked the same question, ChatGPT could give slightly different answers. How human beings asking the question has a significant impact on the quality of answers, thus prompt engineering is invented to fine-tune LLMs.<br>Linguistic Relativity<br>The concept of linguistic relativity sheds light on the importance of prompt engineering. In accordance with linguistic relativity (Lucy, 1997), diverse languages adopt distinct approaches to interpret the reality, subsequently shaping individuals’ thought processes and cognitive frameworks. Conventionally, this relativity has been applied to the differences among natural languages, but this essay will extend its scope to the discrepancy between natural language and machine language, as both of these are human-created symbolic systems.<br>Human beings and machines stand at opposite ends of the spectrum, with humans positioning the natural side and machines occupying the opposite. Between these two extremes lie various programming languages, where C++ (compiled language) is closer to the machine, and Python (interpreted language) situated closer to human understanding.<br>Despite that ChatGPT has developed understanding-like capacity, prompt engineering represents a position closer to machine language, though not as far as Python. By embracing the perspective of the opposite end and taking one step towards the black box, consensus could be fostered by leveraging the shared ground that lies between. In the following two sections, examples towards optimizing prompts will be illustrated.</p>
+<h3 id="Refer-to-Software-Pattern"><a href="#Refer-to-Software-Pattern" class="headerlink" title="Refer to Software Pattern"></a>Refer to Software Pattern</h3><p>Program control structure patterns provide a favorable paradigm for prompt engineering, which could be generalized to different fields. For example, the prompt “in the next 10 rounds, I would like you help me to translate from English to Chinese, each round gives me 3 possible versions” has adopted the looping structure by specifying the number of rounds and versions per round. Besides looping, sequential structure achieves tasks by breaking them down into steps. In the experiment conducted by Kojima et al. (2022), an approach known as Zero-shot-CoT observably improved the capacity of LLMs. Similar techniques of programming, such as clarifying the variation and the scope, could also be applied to enhance the performance.</p>
+<h3 id="Refer-to-Model-Structure"><a href="#Refer-to-Model-Structure" class="headerlink" title="Refer to Model Structure"></a>Refer to Model Structure</h3><p>Almost all the LLMs are designed grounded in the sequence-to-sequence framework. However, following the habits of using searching engine, users are more incline to take ChatGPT as an explainer who provides explanatory definitions for the concept. Obviously, along with concept explanation, translation, paraphrasing, and summarization all fall into the same category from the perspective of text mapping, since they share the common function of creating a m * n mapping between texts. Similar tasks also include comparison, analysis, generating comments, and detecting paradox. Once accepting the fact that ChatGPT is able to paraphrase, or polish declarative sentences, it is reasonable to infer that this ability could be transferred to refine a question, as it is still within the range of text mapping. Furthermore, if an individual’s thoughts are considered as a corpus with inherent consistency, this pattern can also be learned by ChatGPT. For example, in the study of Schwitzgebe et al. (2023), researchers trained a digital philosopher based on the API of ChatGPT, which is defined as the pattern of “persona” according to White et al. (2023). Combining the modes of “question refinement” and “persona”, “flipped interaction” could be realized. In this case, ChatGPT assumes the role of leading the conversation, posing questions until a particular goal is attained. More patterns of prompt could be created by merging the basic ones or exploring the possibilities.<br>Humans are prone to give ambiguous instruction by overestimating the capacity of ChatGPT. In the long run, LLM should be enhanced to fully support the input of natural language, but in the short term, transitioning to machine-centered prompts based on aforementioned patterns is an equivalent of fine-tuning to the model.</p>
+<h2 id="TEXT"><a href="#TEXT" class="headerlink" title="TEXT"></a>TEXT</h2><p>Acknowledging the limitations of both LLMs and human instructions, it’s worth considering that the fundamental issue might lie within the medium itself, namely, the dataset employed for model training. It is far from novel for deep learning model training that dataset, or the features extracted from it, functions as a pivotal factor in accomplishing tasks. Even with full-developed model and well-designed prompts, communication should fail if the problem roots in the ineffective of natural language. In other words, the current text-based information could be a deficient feature that impedes the advancement of LLMs. Subsequent sections will detail the shortcomings of natural language in terms of efficiency.<br>The first challenge lies in the linear nature of context. Current models’ training paradigm primarily relies on attention-based context probability prediction (Wang et al., 2023). Despite advancements enabling longer associated contexts, overcoming the inherent limitations of this method remains challenging. A notable example is the model’s incapacity to provide citations — the mechanism is based on patterns and statistics rather than interact with databases directly due to concerns like intellectual property protection. The absence of a web-like structural information presents obstacles in source tracing, contributing to issues of misinformation.<br>English being the primary training language accounts for another limitation. Despite compatibility with various corpora in languages such as Chinese, French, and Spanish, there still exists a disparity in the degree of support among different languages (Lai et al., 2023). When aligning languages with English as the benchmark, the precision of languages may be compromised during the compatibility mapping process. For instance, specific vocabulary from lesser-known languages might lack corresponding concepts in English; inherent thought patterns conveyed in language expression may not be transferrable, such as the absence of tense in Chinese. Even though the concept of Esperanto, the world language, was proposed as early as 1887, distilling universal rules across all languages, or a “meta-language”, still necessitates certain trade-offs.<br>Besides the deficiency of the dataset, concerns also arise from the scarcity of representation within the entire textual information system. Words serve as discretized representations of concepts. The example of Eskimos using dozens of ways to express “snow” enlightens the possibility of further subdividing the concept, as in the field of digital signal processing where digital signals are samples of analog signals. Those undefined concepts hence float beyond the patterns of thought. Moreover, a fundamental concern is that knowledge is nonlinguistic. As argued by Browning and Lecun (2022), since the connection between thought and language could be tenuous, explaining why “the full-bodied thinking” of humans might elude LLMs’ grasp. Notably, there exists a significant likelihood that languages are merely “a highly specific, and deeply limited, kind of knowledge representation”, rather than exhausting knowledge. Yet by incorporating multimodal information (images, sounds), ChatGPT-4 should present the potential for a breakthrough.</p>
+<h2 id="CONCLUSION"><a href="#CONCLUSION" class="headerlink" title="CONCLUSION"></a>CONCLUSION</h2><p>With language as the link, the conversation between ChatGPT and humans is detailed by this essay. Both quantitative and qualitative methods are used to examine the capacity of ChatGPT, allowing a cursory recognition of to what extent it could be trusted. Expanding the theory of linguistic relativity, the concept of prompt engineering is considered to improve the process of knowledge acquiring. Whereas, limitations might derive from the text-based dataset, or even language itself, while whether multimodal input should be a solution have not yet been determined. Although prompt engineering serves as a positive shotgun approach, whether ChatGPT will develop the true understanding and whether the potential rests in language are still of great uncertainty.</p>
+<h2 id="REFERENCE"><a href="#REFERENCE" class="headerlink" title="REFERENCE"></a>REFERENCE</h2><p>Browning, J. (2023). Personhood and AI: Why large language models don’t understand us. AI &amp; SOCIETY, 1-8. <a target="_blank" rel="noopener" href="https://doi.org/10.1007/s00146-023-01724-y">https://doi.org/10.1007/s00146-023-01724-y</a><br> Browning, J. (2022, August 23). AI and the limits of language. NOEMA. <a target="_blank" rel="noopener" href="https://www.noemamag.com/ai-and-the-limits-of-language/">https://www.noemamag.com/ai-and-the-limits-of-language/</a><br>Devereux, D. T. (1978). Nature and Teaching in Plato’s “Meno.” Phronesis, 23(2), 118–126. <a target="_blank" rel="noopener" href="http://www.jstor.org/stable/4182035">http://www.jstor.org/stable/4182035</a><br>Barattieri di San Pietro, C., Frau, F., Mangiaterra, V., &amp; Bambini, V. (2023, July 10). The pragmatic profile of ChatGPT: assessing the communicative skills of a conversational agent. PsyArXiv, <a target="_blank" rel="noopener" href="https://doi.org/10.31234/osf.io/ckghw">https://doi.org/10.31234/osf.io/ckghw</a><br>Kojima, T., Gu, S. S., Reid, M., Matsuo, Y., &amp; Iwasawa, Y. (2022). Large language models are zero-shot reasoners. Advances in neural information processing systems, 35, 22199-22213.<br>Kosinski, M. (2023). Theory of mind may have spontaneously emerged in large language models. arXiv preprint arXiv:2302.02083.<br>Lai, V. D., Ngo, N. T., Veyseh, A. P. B., Man, H., Dernoncourt, F., Bui, T., &amp; Nguyen, T. H. (2023). ChatGPT beyond English: Towards a comprehensive evaluation of large language models in multilingual learning. arXiv preprint arXiv:2304.05613.<br>Lucy, J. A. (1997). Linguistic relativity. Annual review of anthropology, 26(1), 291-312. <a target="_blank" rel="noopener" href="https://doi.org/10.1146/annurev.anthro.26.1.291">https://doi.org/10.1146/annurev.anthro.26.1.291</a><br>OpenAI. (n.d.) Product Overview. <a target="_blank" rel="noopener" href="https://openai.com/product">https://openai.com/product</a><br>Schwitzgebel, E., Schwitzgebel, D., &amp; Strasser, A. (2023). Creating a large language model of a philosopher. arXiv preprint arXiv:2302.01339.<br>Wang, F. Y., Li, J., Qin, R., Zhu, J., Mo, H., &amp; Hu, B. (2023). Chatgpt for computational social systems: From conversational applications to human-oriented operating systems. IEEE Transactions on Computational Social Systems, 10(2), 414-425. <a target="_blank" rel="noopener" href="https://doi.org/10.1109/TCSS.2023.3252679">https://doi.org/10.1109/TCSS.2023.3252679</a><br>White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., … &amp; Schmidt, D. C. (2023). A prompt pattern catalog to enhance prompt engineering with chatgpt. arXiv preprint arXiv:2302.11382.<br>y Arcas, B. A. (2022). Do large language models understand us?. Daedalus, 151(2), 183-197. <a target="_blank" rel="noopener" href="https://doi.org/10.1162/daed_a_01909">https://doi.org/10.1162/daed_a_01909</a></p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    
+    <a class="pull-right" href="/2024/01/09/2024-10-01RedefiningJournalism/">
+        Redefining Journalism →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By John Doe. All Rights Reserved.
+                </p>
+                <p>Theme By <a target="_blank" rel="noopener" href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/JeanJean-rxl" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    
+                    
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+      
+</body>
+</html>
